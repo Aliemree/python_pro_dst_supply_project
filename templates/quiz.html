@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sınav</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='quiz.css') }}">
+</head>
+<body>
+    <div class="score-info">
+        <p><strong>Kişisel Yüksek Skorunuz:</strong> {{ user.highest_score if user else 0 }}%</p>
+        <p><strong>Genel Yüksek Skor:</strong> {{ highest_score_user.highest_score if highest_score_user else 0 }}%</p>
+    </div>
+
+    <div class="container">
+        <h1>Python Pro Sınavı</h1>
+        <form action="{{ url_for('quiz') }}" method="POST">
+            <label for="username">Adınız:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <p><strong>Soru 1:</strong> Bir gün kaç saattir?</p>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="q1" value="12">
+                    <span class="checkmark"></span>
+                    12
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="24">
+                    <span class="checkmark"></span>
+                    24
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="48">
+                    <span class="checkmark"></span>
+                    48
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="36">
+                    <span class="checkmark"></span>
+                    36
+                </label>
+            </div>
+
+            <p><strong>Soru 2:</strong> Türkiye'nin başkenti neresidir?</p>
+            <input type="text" id="q2" name="q2" required><br><br>
+
+            <p><strong>Soru 3:</strong> Python ile web geliştirme için hangi kütüphane kullanılır?</p>
+            <input type="text" id="q3" name="q3" required><br><br>
+
+            <p><strong>Soru 4:</strong> Bilgisayar görüşü için hangi kütüphane kullanılır?</p>
+            <input type="text" id="q4" name="q4" required><br><br>
+
+            <p><strong>Soru 5:</strong> Doğal Dil İşleme için hangi kütüphane kullanılır?</p>
+            <input type="text" id="q5" name="q5" required><br><br>
+
+            <button type="submit">Sınavı Gönder</button>
+        </form>
+    </div>
+    <footer>
+        <p>Bu site Ali EMRE tarafından geliştirilmiştir.</p>
+    </footer>
+</body>
+</html>

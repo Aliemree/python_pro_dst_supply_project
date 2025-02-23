@@ -1,0 +1,54 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Başlık */
+h1 {
+    color: #28a745;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Buton */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}

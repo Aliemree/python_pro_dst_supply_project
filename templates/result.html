@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sınav Sonucu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <h1>Sınav Sonucu</h1>
+    <p><strong>Skorunuz:</strong> {{ score }}%</p>
+    <p><strong>Kişisel Yüksek Skorunuz:</strong> {{ user.highest_score if user else 0 }}%</p>
+    <p><strong>Genel Yüksek Skor:</strong> {{ highest_score_user.highest_score if highest_score_user else 0 }}%</p>
+    <a href="{{ url_for('quiz', username=user.username if user else '') }}">Yeniden Dene</a>
+    <footer>
+        <p>Bu site Ali EMRE tarafından geliştirilmiştir.</p>
+    </footer>
+</body>
+</html>
