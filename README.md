@@ -44,7 +44,20 @@ Proje **PythonAnywhere** üzerinde yayında!
 
 ## 📂 Proje Yapısı
 
-📦 python_pro_dst_supply_project ├── 📂 static/ # CSS, JavaScript ve medya dosyaları ├── 📂 templates/ # HTML şablon dosyaları ├── 📂 models/ # Veritabanı modelleri ├── 📂 routes/ # Flask uygulama rotaları ├── app.py # Ana uygulama dosyası ├── config.py # Yapılandırma ayarları ├── requirements.txt # Gerekli bağımlılıklar ├── README.md # Proje dokümantasyonu └── LICENSE # Lisans bilgisi
+## 📂 Proje Yapısı
+
+```bash
+python_pro_dst_supply_project/
+├── static/            # CSS, JavaScript ve medya dosyaları
+├── templates/         # HTML şablon dosyaları
+├── models/            # Veritabanı modelleri
+├── routes/            # Flask uygulama rotaları
+├── migrations/        # Veritabanı değişikliklerini takip eden dosyalar
+├── app.py             # Ana uygulama dosyası
+├── config.py          # Yapılandırma ayarları
+├── requirements.txt   # Gerekli bağımlılıkların listesi
+├── README.md          # Proje dokümantasyonu
+└── LICENSE            # Lisans bilgisi
 
 ---
 
