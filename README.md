@@ -40,7 +40,7 @@ Bu proje, **Kodland Eğitmenlik Sınavı** kapsamında geliştirilmiştir. Amaç
 ## 🌐 Canlı Demo
 
 Proje **PythonAnywhere** üzerinde yayında!  
-🔗 **Canlı Demo:** [Buraya Tıklayarak İnceleyebilirsiniz](https://kullaniciadi.pythonanywhere.com/)  
+🔗 **Canlı Demo:** [Buraya Tıklayarak İnceleyebilirsiniz](https://aliemreetr.pythonanywhere.com/)  
 
 ## 📂 Proje Yapısı
 
